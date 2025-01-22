@@ -197,9 +197,6 @@ background-position: center;
 max-width: 1440px;
 }
 
-
-
-
 .banner .container
 {
   align-content: center;
@@ -476,6 +473,220 @@ background-color: #fff;
 }
 
 /* #endregion ------------------ Portfolio Section ---------------------------------------*/
+/* #region ------------------ MODAL Section ---------------------------------------*/
+.modal-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top:0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  background-image: linear-gradient(to bottom,
+    rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+  pointer-events: auto;
+  opacity: 1;
+  transition: opacity, background-image, pointer-events;
+}
+
+.modal-body {
+  /* margin-top:102px; */
+  padding: 24px;
+  min-width: 408px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+background: #fcfcfc;
+border-radius: 4px;
+}
+
+.close-btn {
+  background-color: #e7e9fc;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  justify-self: end;
+  display: flex;
+  align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+
+.close-btn:hover{
+  background-color: #404bbf;
+  border: transparent;
+  fill: #f4f4fd;
+}
+
+.modal-icon-close{
+
+}
+
+.modal-title {
+margin-top: 24px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #2e2f42;
+font-family: "Roboto", sans-serif;
+text-align: center;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.modal-label {
+  font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: #8e8f99;
+padding-bottom: 4px;
+}
+
+.modal-field-container {
+  display: flex;
+  margin-bottom: 8px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  height: 40px;
+  padding-left: 38px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-field-container:focus-within .modal-icons{
+  fill: #4D5AE5
+}
+
+.modal-field-container.comment {
+  height:120px;
+  padding-top: 8px;
+  align-items: start;
+  resize: none;
+}
+
+.comment::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+}
+.modal-field-container:focus-within {
+  border: 1px solid #4d5ae5;
+  fill: #4D5AE5;
+}
+
+.modal-field{
+  width: 100%;
+  outline: transparent;
+  border: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-icons{
+fill:#2e2f42;
+position: absolute;
+margin-left: -100%;
+}
+
+
+.privacy-policy {
+
+  margin-bottom: 8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: #8e8f99;
+}
+
+.privacy-policy a {
+line-height: 1.33;
+text-decoration: underline;
+text-decoration-skip-ink: none;
+color: #4d5ae5;
+}
+
+.privacy-policy:checked + .modal-label .privacy-check,
+.privacy-policy:checked ~ .modal-label .galka{
+border-radius: 2px;
+background-color: #404bbf;
+border: 1px solid #404bbf;
+fill: #f4f4fd;
+}
+
+.privacy-policy:focus + .modal-label .privacy-check {
+  outline: 2px solid rgba(0, 0, 255, 0.5);
+}
+
+  .modal-label{
+  display: flex;
+}
+
+.privacy-check{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+width: 16px;
+height: 16px;
+border-radius: 2px;
+border: 1px solid rgba(46, 47, 66, 0.4);
+margin-right: 8px;
+cursor: pointer;
+transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+justify-self: center;
+
+}
+
+.galka{
+margin: 0;
+width: 10px;
+height: 10px;
+fill: transparent;
+  }
+
+.modal-submit-btn {
+
+display: block;
+background: #4d5ae5;
+min-width: 169px;
+height: 56px;
+
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #fff;
+cursor: pointer;
+
+margin-top: 40px;
+margin-right: auto;
+margin-left: auto;
+padding: 16px 32px;
+
+border: none;
+border-radius: 4px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-submit-btn:hover
+{
+background: #404bbf;
+}
+
+.modal-submit-btn:focus
+{
+background: #404bbf;
+}
+/* #endregion ------------------ MODAL Section ---------------------------------------*/
 /* #region ------------------ Footer Section ---------------------------------------*/
 .footer{
   display: flex;
