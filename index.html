@@ -370,18 +370,20 @@
 
 </main>
 
-<div class="modal-overlay">
+<div class="modal-overlay is-open">
   <div class="modal-body">
- <div class="close-btn"><svg class="modal-icon-close" width="8" height="8">
+ 
+<button class="close-btn"><svg class="modal-icon-close" width="8" height="8">
   <use href="./images/icons.svg#icon-close"></use>
-</svg></div>
- <p class="modal-title">Leave your contacts and we will call you back</p>
+</svg></button>
+<p class="modal-title">Leave your contacts and we will call you back</p>
+<div class="form-wrapper">
    <form action="" class="modal-form" name="modal-window">
-      <label class="modal-label" name="user-name" for="user-name">Name</label>
+      <label class="modal-label" name="Name" for="user-name">Name</label>
       <div class="modal-field-container">
         <input 
         type="text"
-         class="modal-field modal-name"
+        class="modal-field modal-name"
         name="user-name" 
         id="user-name"
         pattern="[a-zA-Zа-яА-ЯіІєЄїЇґҐʼ]+"
@@ -419,7 +421,7 @@
           <use href="./images/icons.svg#icon-email"></use>
         </svg>
       </div>
-      <label class="modal-label" name="comment" for="text input">Comment</label>
+      <label class="modal-label" name="comment" for="comment">Comment</label>
       <div class="modal-field-container comment">
       <input type="text" class="modal-field comment" name="comment" placeholder="Text input" id="text input" required>
     </div>
@@ -436,10 +438,11 @@
       <button type="submit" class="modal-submit-btn">Sent</button>
     </form>
   </div>
+  </div>
 </div>
 
 <footer class="footer">
-    
+ 
    <!-- <div class="container"> -->
 
       <div class="footer-inner">
@@ -483,7 +486,22 @@
               </li>
             </ul>  
           </div>
-        
+          <form action="" class="footer-form subscribe">
+          <label class="footer-label" for="subscribe">
+            <p class="footer-p">
+              Subscribe
+            </p>
+          </label>
+          <div class="footer-field">
+            <input type="text" class="footer-form-fieild" name="subscribe" placeholder="Email" id="subscribe" required>
+          </div>
+            <button type="button" class="footer-btn">Subscribe
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+
       <!-- </div> -->
     </div>
 
