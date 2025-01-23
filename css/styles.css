@@ -653,8 +653,9 @@ ul.contacts,
     margin-right: 8px;
     cursor: pointer;
     fill: transparent;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    justify-self: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .galka {
