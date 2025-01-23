@@ -913,11 +913,12 @@ color: #f4f4fd;
     display: inline-flex;
   }
   
-    .footer-field::placeholder{
-      color #ffffff;
+.footer-field::placeholder
+  {
+      color: #ffffff;
     }
 
-  .footer-field
+.footer-field
   {
     width: 264px;
     height: 40px;
