@@ -378,8 +378,8 @@
 </svg></button>
 <p class="modal-title">Leave your contacts and we will call you back</p>
 <div class="form-wrapper">
-   <form action="" class="modal-form" name="modal-window">
-      <label class="modal-label" name="Name" for="user-name">Name</label>
+   <form class="modal-form" name="modal-window">
+      <label class="modal-label" for="user-name">Name</label>
       <div class="modal-field-container">
         <input 
         type="text"
@@ -393,7 +393,7 @@
           <use href="./images/icons.svg#icon-person"></use>
         </svg>
       </div>
-      <label class="modal-label" name="user-phone" for="user-phone">Phone</label>
+      <label class="modal-label" for="user-phone">Phone</label>
       <div class="modal-field-container">
         <input
         type="tel" 
@@ -408,7 +408,7 @@
           <use href="./images/icons.svg#icon-phone"></use>
         </svg>
       </div>
-      <label class="modal-label" name="user-email" for="user-email">Email</label>
+      <label class="modal-label" for="user-email">Email</label>
       <div class="modal-field-container">
         <input
         type="Email"
@@ -421,13 +421,13 @@
           <use href="./images/icons.svg#icon-email"></use>
         </svg>
       </div>
-      <label class="modal-label" name="comment" for="comment">Comment</label>
+      <label class="modal-label" for="comment">Comment</label>
       <div class="modal-field-container comment">
-      <input type="text" class="modal-field comment" name="comment" placeholder="Text input" id="text input" required>
+      <input type="text" class="modal-field comment" name="comment" placeholder="Text input" id="comment" required>
     </div>
       <input type="checkbox" class="privacy-policy visually-hidden" name="privacy-policy" id="privacy-policy" required>
       
-      <label class="modal-label" name="privacy-policy" for="privacy-policy">
+      <label class="modal-label" for="privacy-policy">
       <span class="privacy-check">
         <svg class="modal-icons galka" width="16" height="16">
           <use href="./images/icons.svg#icon-vector"></use>
@@ -486,14 +486,11 @@
               </li>
             </ul>  
           </div>
-          <form action="" class="footer-form subscribe">
-          <label class="footer-label" for="subscribe">
-            <p class="footer-p">
-              Subscribe
-            </p>
+          <form class="footer-form subscribe">
+          <label class="footer-label" for="subscribe">Subscribe
           </label>
           <div class="footer-field">
-            <input type="text" class="footer-form-fieild" name="subscribe" placeholder="Email" id="subscribe" required>
+            <input type="Email" class="footer-form-fieild" name="subscribe" placeholder="Email" id="subscribe" required>
           </div>
             <button type="button" class="footer-btn">Subscribe
               <svg class="subscribe-icon" width="24" height="24">
