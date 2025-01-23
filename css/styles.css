@@ -583,11 +583,11 @@ ul.contacts,
     align-self: start;
     resize: none;
     margin-bottom: 16px;
-    /* font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
-  border: 1px solid rgba(46, 47, 66, 0.4) ;*/
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
 .modal-icons {
