@@ -578,6 +578,7 @@ ul.contacts,
 
 .modal-form-comment {
     margin-bottom: 16px;
+    /* etu pomenyal */
 }
 
 .comment {
@@ -604,6 +605,9 @@ ul.contacts,
 }
 
 .privacy {
+    margin-bottom: 24px;
+}
+.modal-form-checkbox {
     margin-bottom: 24px;
 }
 
